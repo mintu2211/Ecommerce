@@ -39,10 +39,6 @@ public class myAccount {
 	WebDriver signIn;
 
 
-  public void enteruserId(String email)
-  {
-	  registeredUserEmailId.sendkeys(email);
-	  
-  }
+  
 
 }
