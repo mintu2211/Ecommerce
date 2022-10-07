@@ -170,3 +170,14 @@
 [INFO ] 2022-10-07 11:22:05.207 [main] MyStoreV1 - enter registered email
 [INFO ] 2022-10-07 11:22:05.328 [main] MyStoreV1 - enter registered password
 [INFO ] 2022-10-07 11:22:18.698 [main] MyStoreV1 - verifyLogin -Passed
+[INFO ] 2022-10-07 12:54:36.103 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 12:55:02.262 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 12:55:08.729 [main] MyStoreV1 - click ion signIn
+[INFO ] 2022-10-07 12:55:08.866 [main] MyStoreV1 - enter registered email
+[INFO ] 2022-10-07 12:55:08.986 [main] MyStoreV1 - enter registered password
+[INFO ] 2022-10-07 12:55:16.972 [main] MyStoreV1 - verifyLogin -Passed
+[INFO ] 2022-10-07 14:00:52.523 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 14:01:01.378 [main] MyStoreV1 - click ion signIn
+[INFO ] 2022-10-07 14:01:01.530 [main] MyStoreV1 - enter registered email
+[INFO ] 2022-10-07 14:01:01.660 [main] MyStoreV1 - enter registered password
+[INFO ] 2022-10-07 14:01:11.386 [main] MyStoreV1 - verifyLogin -Passed

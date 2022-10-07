@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+
 import com.mystore.pageobject.accountCreationdetals;
 import com.mystore.pageobject.indexpage;
 
@@ -82,6 +83,9 @@ public class TC_myAccountPageTest extends Baseclass {
 		driver.findElement(By.id("SubmitLogin")).click();
 		logger.info("verifyLogin -Passed");
 		capturescreenshot(driver, browser);
+		
+		
+		
 		driver.quit();
 }
 

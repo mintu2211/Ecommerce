@@ -2,22 +2,22 @@
 <testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-07T11:21:44 IST" name="Default suite" finished-at="2022-10-07T11:22:18 IST" duration-ms="34510">
+  <suite started-at="2022-10-07T14:00:34 IST" name="Suite" finished-at="2022-10-07T14:01:11 IST" duration-ms="36772">
     <groups>
     </groups>
-    <test started-at="2022-10-07T11:21:44 IST" name="Default test" finished-at="2022-10-07T11:22:18 IST" duration-ms="34510">
+    <test started-at="2022-10-07T14:00:34 IST" name="Test" finished-at="2022-10-07T14:01:11 IST" duration-ms="36772">
       <class name="com.mystore.testcases.TC_myAccountPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcases.TC_myAccountPageTest@5be1d0a4]" started-at="2022-10-07T11:21:44 IST" name="setup" finished-at="2022-10-07T11:21:48 IST" duration-ms="4304" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcases.TC_myAccountPageTest@29f7cefd]" started-at="2022-10-07T14:00:35 IST" name="setup" finished-at="2022-10-07T14:00:40 IST" duration-ms="5101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifylogin()[pri:2, instance:com.mystore.testcases.TC_myAccountPageTest@5be1d0a4]" started-at="2022-10-07T11:21:48 IST" name="verifylogin" finished-at="2022-10-07T11:22:18 IST" duration-ms="30153" status="FAIL">
+        <test-method signature="verifylogin()[pri:2, instance:com.mystore.testcases.TC_myAccountPageTest@29f7cefd]" started-at="2022-10-07T14:00:40 IST" name="verifylogin" finished-at="2022-10-07T14:01:11 IST" duration-ms="30786" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at java.base/java.io.File.<init>(File.java:278)
 at com.mystore.testcases.Baseclass.capturescreenshot(Baseclass.java:83)
-at com.mystore.testcases.TC_myAccountPageTest.verifylogin(TC_myAccountPageTest.java:84)
+at com.mystore.testcases.TC_myAccountPageTest.verifylogin(TC_myAccountPageTest.java:85)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,6 +53,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- verifylogin -->
       </class> <!-- com.mystore.testcases.TC_myAccountPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
