@@ -1,6 +1,8 @@
 package com.mystore.utilities;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -23,7 +25,10 @@ public class ExtentListnerClass implements ITestListener {
 
 	public void configurationReport()
 	{
-		htmlReporter=new ExtentSparkReporter("ExtentListenerReportDemo.html");
+		
+		String timestamp = new SimpleDateFormat("yyyy.mm.dd hh:mm:ss").format(new Date());
+		String reportName = "MyStoreTestReport" +timestamp + ".html";
+		htmlReporter=new ExtentSparkReporter(System.getProperty("user.dir") + "// Reports//" + reportName);
 		reports=new ExtentReports();
 		reports.attachReporter(htmlReporter);
 
