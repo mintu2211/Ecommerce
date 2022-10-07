@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 07 12:54:47 IST 2022</td>
+<td>Started on:</td><td>Fri Oct 07 16:58:36 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29667 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24707 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,9 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.mystore.testcases.TC_myAccountPageTest.verifylogin()'><b>verifylogin</b><br>Test class: com.mystore.testcases.TC_myAccountPageTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at java.base/java.io.File.&lt;init&gt;(File.java:278)
-	at com.mystore.testcases.Baseclass.capturescreenshot(Baseclass.java:83)
+<td><div><pre>java.lang.IllegalArgumentException: Parameter &apos;srcDir&apos; is not a directory: &apos;C:\Users\Devendra\AppData\Local\Temp\screenshot11469587982299820126.png&apos;
+	at org.apache.commons.io.FileUtils.requireDirectory(FileUtils.java:2635)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:682)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:630)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:531)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:502)
+	at com.mystore.testcases.Baseclass.capturescreenshot(Baseclass.java:86)
 	at com.mystore.testcases.TC_myAccountPageTest.verifylogin(TC_myAccountPageTest.java:85)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -108,10 +112,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace992893965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace992893965'><pre>java.lang.NullPointerException
-	at java.base/java.io.File.&lt;init&gt;(File.java:278)
-	at com.mystore.testcases.Baseclass.capturescreenshot(Baseclass.java:83)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1956244167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1956244167'><pre>java.lang.IllegalArgumentException: Parameter &apos;srcDir&apos; is not a directory: &apos;C:\Users\Devendra\AppData\Local\Temp\screenshot11469587982299820126.png&apos;
+	at org.apache.commons.io.FileUtils.requireDirectory(FileUtils.java:2635)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:682)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:630)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:531)
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:502)
+	at com.mystore.testcases.Baseclass.capturescreenshot(Baseclass.java:86)
 	at com.mystore.testcases.TC_myAccountPageTest.verifylogin(TC_myAccountPageTest.java:85)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -142,7 +150,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>25</td>
+<td>20</td>
 <td>com.mystore.testcases.TC_myAccountPageTest@5be1d0a4</td></tr>
 </table><p>
 </body>

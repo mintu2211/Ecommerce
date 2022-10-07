@@ -82,7 +82,7 @@ public class TC_myAccountPageTest extends Baseclass {
 		logger.info("enter registered password");
 		driver.findElement(By.id("SubmitLogin")).click();
 		logger.info("verifyLogin -Passed");
-		capturescreenshot(driver, browser);
+		capturescreenshot(driver, "verifylogin");
 		
 		
 		

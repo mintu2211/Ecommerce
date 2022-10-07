@@ -80,10 +80,10 @@ public class Baseclass {
 		//Step 2: call get screenshotAS method to create image file
 
 		File src=screenshot.getScreenshotAs(OutputType.FILE);
-		File dest=new File(System.getProperty("user.dir" + "\\Screenshots\\" + testname + ".png"));
-
+		File dest=new File(System.getProperty("user.dir") + "\\Screenshots\\" + testname + ".png");
+		//File dest=new File("C:\\Users\\Devendra\\git\\Ecommerce\\MyStoreV1\\Screenshots\\FullPage.png");
 		//step3: copy image file to destination
-		FileUtils.copyDirectory(src, dest);
+		FileUtils.copyFile(src, dest);
 	}
 
 }

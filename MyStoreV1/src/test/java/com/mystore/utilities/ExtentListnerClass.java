@@ -26,9 +26,9 @@ public class ExtentListnerClass implements ITestListener {
 	public void configurationReport()
 	{
 		
-		String timestamp = new SimpleDateFormat("yyyy.mm.dd hh:mm:ss").format(new Date());
-		String reportName = "MyStoreTestReport" +timestamp + ".html";
-		htmlReporter=new ExtentSparkReporter(System.getProperty("user.dir") + "// Reports//" + reportName);
+		String timestamp = new SimpleDateFormat("yyyy.mm.dd.hh.mm.ss").format(new Date());
+		String reportName = "MyStoreTestReport" + timestamp + ".html";
+		htmlReporter=new ExtentSparkReporter(System.getProperty("user.dir") + "//Reports//" + reportName);
 		reports=new ExtentReports();
 		reports.attachReporter(htmlReporter);
 
