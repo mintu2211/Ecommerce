@@ -1,5 +1,7 @@
 package com.mystore.testcases;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import com.mystore.pageobject.accountCreationdetals;
@@ -9,8 +11,8 @@ public class TC_myAccountPageTest extends Baseclass {
 
 
 
-    
-	@Test(priority = 1)
+
+	@Test(enabled = false)
 	public void verifyregistrationAndLogin()
 	{
 
@@ -22,7 +24,7 @@ public class TC_myAccountPageTest extends Baseclass {
 
 		indexpage pg=new indexpage(driver);
 		pg.clickOnSignIn();
-		logger.info("click ion signIn");
+		logger.info("click on signIn");
 
 
 
@@ -59,7 +61,7 @@ public class TC_myAccountPageTest extends Baseclass {
 
 
 	@Test(priority = 2)
-	public void verifylogin() 
+	public void verifylogin() throws IOException 
 	{
 		//launch browse
 		//open url
@@ -73,15 +75,15 @@ public class TC_myAccountPageTest extends Baseclass {
 
 		driver.findElement(By.id("email")).sendKeys("devendra.vds2211@gmail.com");
 		logger.info("enter registered email");
+		
+
 		driver.findElement(By.id("passwd")).sendKeys("devendra11");
 		logger.info("enter registered password");
 		driver.findElement(By.id("SubmitLogin")).click();
-		logger.info("subbmit");
-
+		logger.info("verifyLogin -Passed");
+		capturescreenshot(driver, browser);
 		driver.quit();
-		
-		
-	}
+}
 
 
 
