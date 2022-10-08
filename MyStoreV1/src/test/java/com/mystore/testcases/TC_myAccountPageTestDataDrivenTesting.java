@@ -3,13 +3,15 @@ package com.mystore.testcases;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.mystore.pageobject.accountCreationdetals;
 import com.mystore.pageobject.indexpage;
 import com.mystore.utilities.ReadConfig;
+import com.mystore.utilities.ReadExcelFile;
 
-public class TC_myAccountPageTest extends Baseclass {
+public class TC_myAccountPageTestDataDrivenTesting extends Baseclass {
 
 
 	 ReadConfig readconfig=new ReadConfig();
@@ -63,8 +65,8 @@ public class TC_myAccountPageTest extends Baseclass {
 	}
 
 
-	@Test(priority = 2)
-	public void verifylogin() throws IOException 
+	@Test(dataProvider = "LoginDataProvider")
+	public void verifylogin(String userName, String password, String expecteduserName) throws IOException 
 	{
 		//launch browse
 		//open url
@@ -76,21 +78,41 @@ public class TC_myAccountPageTest extends Baseclass {
 		pg.clickOnSignIn();
 		logger.info("click ion signIn");
 
-		driver.findElement(By.id("email")).sendKeys(readconfig.getEmail());
+		driver.findElement(By.id("email")).sendKeys(userName);
 		logger.info("enter registered email");
 		
 
-		driver.findElement(By.id("passwd")).sendKeys(readconfig.getpassword());
+		driver.findElement(By.id("passwd")).sendKeys(password);
 		logger.info("enter registered password");
 		driver.findElement(By.id("SubmitLogin")).click();
 		logger.info("verifyLogin -Passed");
 		capturescreenshot(driver, "verifylogin");
 		
 		
-		
-		driver.quit();
-}
+		}
 
+	
+	@DataProvider(name = "LoginDataProvider")
+	public String[][] LoginDataProvider() throws IOException
+	{
+		//System.out.println(System.getProperty("user.dir"));
+		String fileName=System.getProperty("user.dir")+ "\\TestData\\MyStoreTestData.xlsx";
+		//humne sare method static banaye hai isliye hume object create nahi karne pad raha hai
+		int ttlRow=ReadExcelFile.getRowCount(fileName, "LoginTestdata");
+		int ttlcolumn = ReadExcelFile.getColCount(fileName, "LoginTestdata");
+		
+		String data[][]=new String[ttlRow-1][ttlcolumn];
+		
+		for(int i=1; i<ttlRow; i++)//row=1,2
+		{
+			for(int j=0; j<ttlcolumn; j++)//col=0,1,2
+			{
+				data[i-1][j]=ReadExcelFile.getCellValue(fileName, "LoginTestdata", i, j);
+			}
+		}
+		return data;
+		
+	}
 
 
 }

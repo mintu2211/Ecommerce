@@ -239,3 +239,66 @@
 [INFO ] 2022-10-07 19:14:16.189 [main] MyStoreV1 - enter registered email
 [INFO ] 2022-10-07 19:14:16.311 [main] MyStoreV1 - enter registered password
 [INFO ] 2022-10-07 19:14:22.497 [main] MyStoreV1 - verifyLogin -Passed
+[INFO ] 2022-10-07 19:18:58.259 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 19:19:02.634 [main] MyStoreV1 - click on signIn
+[INFO ] 2022-10-07 19:19:06.506 [main] MyStoreV1 - select title
+[INFO ] 2022-10-07 19:19:06.668 [main] MyStoreV1 - enter Name
+[INFO ] 2022-10-07 19:19:06.819 [main] MyStoreV1 - enter Last Name
+[INFO ] 2022-10-07 19:19:07.562 [main] MyStoreV1 - enter Address
+[INFO ] 2022-10-07 19:19:07.708 [main] MyStoreV1 - enter city
+[INFO ] 2022-10-07 19:19:10.567 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 19:19:14.365 [main] MyStoreV1 - click ion signIn
+[INFO ] 2022-10-07 19:19:14.501 [main] MyStoreV1 - enter registered email
+[INFO ] 2022-10-07 19:19:14.608 [main] MyStoreV1 - enter registered password
+[INFO ] 2022-10-07 19:19:18.352 [main] MyStoreV1 - verifyLogin -Passed
+[INFO ] 2022-10-07 19:25:15.951 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 19:25:26.035 [main] MyStoreV1 - click on signIn
+[INFO ] 2022-10-07 19:25:29.574 [main] MyStoreV1 - select title
+[INFO ] 2022-10-07 19:25:29.732 [main] MyStoreV1 - enter Name
+[INFO ] 2022-10-07 19:25:29.899 [main] MyStoreV1 - enter Last Name
+[INFO ] 2022-10-07 19:25:30.758 [main] MyStoreV1 - enter Address
+[INFO ] 2022-10-07 19:25:30.889 [main] MyStoreV1 - enter city
+[INFO ] 2022-10-07 19:25:36.850 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 19:25:48.014 [main] MyStoreV1 - click ion signIn
+[INFO ] 2022-10-07 19:25:48.149 [main] MyStoreV1 - enter registered email
+[INFO ] 2022-10-07 19:25:48.263 [main] MyStoreV1 - enter registered password
+[INFO ] 2022-10-07 19:25:54.750 [main] MyStoreV1 - verifyLogin -Passed
+[INFO ] 2022-10-07 20:28:09.002 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 20:28:14.715 [main] MyStoreV1 - click on signIn
+[INFO ] 2022-10-07 20:28:19.307 [main] MyStoreV1 - select title
+[INFO ] 2022-10-07 20:28:19.451 [main] MyStoreV1 - enter Name
+[INFO ] 2022-10-07 20:28:19.591 [main] MyStoreV1 - enter Last Name
+[INFO ] 2022-10-07 20:28:20.316 [main] MyStoreV1 - enter Address
+[INFO ] 2022-10-07 20:28:20.453 [main] MyStoreV1 - enter city
+[INFO ] 2022-10-07 20:28:23.592 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 20:28:26.401 [main] MyStoreV1 - click ion signIn
+[INFO ] 2022-10-07 20:28:26.532 [main] MyStoreV1 - enter registered email
+[INFO ] 2022-10-07 20:28:26.665 [main] MyStoreV1 - enter registered password
+[INFO ] 2022-10-07 20:28:30.320 [main] MyStoreV1 - verifyLogin -Passed
+[INFO ] 2022-10-07 20:36:21.421 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 20:36:26.150 [main] MyStoreV1 - click on signIn
+[INFO ] 2022-10-07 20:36:30.010 [main] MyStoreV1 - select title
+[INFO ] 2022-10-07 20:36:30.162 [main] MyStoreV1 - enter Name
+[INFO ] 2022-10-07 20:36:30.311 [main] MyStoreV1 - enter Last Name
+[INFO ] 2022-10-07 20:36:31.052 [main] MyStoreV1 - enter Address
+[INFO ] 2022-10-07 20:36:31.216 [main] MyStoreV1 - enter city
+[INFO ] 2022-10-07 20:36:32.949 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 20:36:36.355 [main] MyStoreV1 - click ion signIn
+[INFO ] 2022-10-07 20:36:36.495 [main] MyStoreV1 - enter registered email
+[INFO ] 2022-10-07 20:38:23.073 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 20:38:23.507 [main] MyStoreV1 - click on signIn
+[INFO ] 2022-10-07 20:38:53.459 [main] MyStoreV1 - url open
+[INFO ] 2022-10-07 20:38:57.363 [main] MyStoreV1 - click on signIn
+[INFO ] 2022-10-07 20:39:07.992 [main] MyStoreV1 - url open
+[INFO ] 2022-10-08 11:20:57.170 [main] MyStoreV1 - url open
+[INFO ] 2022-10-08 11:21:00.911 [main] MyStoreV1 - click on signIn
+[INFO ] 2022-10-08 11:21:02.957 [main] MyStoreV1 - select title
+[INFO ] 2022-10-08 11:21:03.086 [main] MyStoreV1 - enter Name
+[INFO ] 2022-10-08 11:21:03.215 [main] MyStoreV1 - enter Last Name
+[INFO ] 2022-10-08 11:21:03.868 [main] MyStoreV1 - enter Address
+[INFO ] 2022-10-08 11:21:03.991 [main] MyStoreV1 - enter city
+[INFO ] 2022-10-08 11:21:05.676 [main] MyStoreV1 - url open
+[INFO ] 2022-10-08 11:21:07.973 [main] MyStoreV1 - click ion signIn
+[INFO ] 2022-10-08 11:21:08.130 [main] MyStoreV1 - enter registered email
+[INFO ] 2022-10-08 11:21:08.237 [main] MyStoreV1 - enter registered password
+[INFO ] 2022-10-08 11:21:12.541 [main] MyStoreV1 - verifyLogin -Passed

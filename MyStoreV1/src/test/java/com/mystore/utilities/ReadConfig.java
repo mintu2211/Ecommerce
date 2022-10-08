@@ -52,6 +52,15 @@ public class ReadConfig {
 			throw new RuntimeException("email not specified");
 		
 	}
+	public String getpassword()
+	{
+		String enterpass =properties.getProperty("password");
+		if(enterpass!=null)
+		return enterpass;
+		else
+			throw new RuntimeException("password  not specified");
+		
+	}
 
 	
 	

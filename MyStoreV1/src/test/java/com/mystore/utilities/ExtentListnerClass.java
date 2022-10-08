@@ -26,6 +26,7 @@ public class ExtentListnerClass implements ITestListener {
 	public void configurationReport()
 	{
 		
+		ReadConfig readconfig=new ReadConfig();
 		String timestamp = new SimpleDateFormat("yyyy.mm.dd.hh.mm.ss").format(new Date());
 		String reportName = "MyStoreTestReport" + timestamp + ".html";
 		htmlReporter=new ExtentSparkReporter(System.getProperty("user.dir") + "//Reports//" + reportName);
@@ -35,7 +36,8 @@ public class ExtentListnerClass implements ITestListener {
 		//add system info 
 		reports.setSystemInfo("Machine", "DevendraPC1");
 		reports.setSystemInfo("os", "window 8");
-		reports.setSystemInfo("Browser", "chrome");
+		//reports.setSystemInfo("Browser", "chrome");
+		reports.setSystemInfo("Browser",readconfig.getBrowser());
 		reports.setSystemInfo("username", "Devendra");
 
 		//configuration 
@@ -71,7 +73,7 @@ public class ExtentListnerClass implements ITestListener {
 		test=reports.createTest(Result.getName());
 		test.log(Status.FAIL, MarkupHelper.createLabel("Name of TestCases is" +Result.getName(), ExtentColor.RED));
 	
-		String screenshotpath=System.getProperty("user.dir") +"\\Screenshots\\" +Result.getName() +".png";
+		String screenshotpath=System.getProperty("user.dir") + "\\Screenshots\\" + Result.getName() + ".png";
 		File screenshotfile=new File(screenshotpath);
 		
 		if(screenshotfile.exists())

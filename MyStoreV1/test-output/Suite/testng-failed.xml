@@ -8,8 +8,8 @@
     <classes>
       <class name="com.mystore.testcases.TC_myAccountPageTest">
         <methods>
-          <include name="verifylogin"/>
           <include name="setup"/>
+          <include name="verifyregistrationAndLogin"/>
         </methods>
       </class> <!-- com.mystore.testcases.TC_myAccountPageTest -->
     </classes>
