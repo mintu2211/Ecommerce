@@ -122,10 +122,10 @@ public class accountCreationdetals {
 		city.sendKeys(city1);
 	}
 
-	public void selectstate(String text1) {
+	public void selectstate(String i) {
 
 		Select obj= new Select(state);
-		obj.selectByVisibleText(text1);
+		obj.selectByVisibleText(i);
 		
 	}
 
@@ -149,6 +149,7 @@ public class accountCreationdetals {
 
   public void aliasAdd(String Aliasadd)
 {
+	  alias.clear();
 	  alias.sendKeys(Aliasadd);
 }
   

@@ -3,11 +3,13 @@ package com.mystore.testcases;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.mystore.pageobject.accountCreationdetals;
 import com.mystore.pageobject.indexpage;
 import com.mystore.pageobject.myAccount;
+import com.mystore.pageobject.registeredUserAccount;
 import com.mystore.utilities.ReadConfig;
 
 public class TC_myAccountPageTest extends Baseclass {
@@ -15,7 +17,7 @@ public class TC_myAccountPageTest extends Baseclass {
 
 	ReadConfig readconfig=new ReadConfig();
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void verifyregistrationAndLogin() throws IOException
 	{
 
@@ -32,7 +34,7 @@ public class TC_myAccountPageTest extends Baseclass {
 
 
 
-		driver.findElement(By.id("email_create")).sendKeys("devendr.2211@gmail.com");
+		driver.findElement(By.id("email_create")).sendKeys("devera.22@gmail.com");
 		driver.findElement(By.id("SubmitCreate")).click();
 
 
@@ -52,19 +54,23 @@ public class TC_myAccountPageTest extends Baseclass {
 		logger.info("enter Address");
 		accountcreationPg.entercity("vidisha");
 		logger.info("enter city");
-		accountcreationPg.selectstate(2);
+		accountcreationPg.selectstate("Iowa");
 		accountcreationPg.enterPostcode("00000");
 		accountcreationPg.selectcountry("United States");
 		accountcreationPg.entermoblino("9039140296");
 		accountcreationPg.aliasAdd("200 link road no");
 		accountcreationPg.clickOnRegister();
-        capturescreenshot(driver, "verifyregistrationAndLogin");
+		registeredUserAccount reguser=new registeredUserAccount(driver);
+		String userName=reguser.getUserName();
+		Assert.assertEquals("devendra pandya", userName);
+
+		capturescreenshot(driver, "verifyregistrationAndLogin");
 
 
 	}
 
 
-	@Test(priority = 2)
+	@Test
 	public void verifylogin() throws IOException 
 	{
 		//launch browse
@@ -88,6 +94,10 @@ public class TC_myAccountPageTest extends Baseclass {
 		logger.info("verifyLogin -Passed");
 		capturescreenshot(driver, "verifylogin");
 
+
+		registeredUserAccount reguser=new registeredUserAccount(driver);
+		String userName=reguser.getUserName();
+		Assert.assertEquals("Devendra Pandya", userName);
 
 
 	}

@@ -18,8 +18,14 @@ public class registeredUserAccount {
 	}
 	
 	
-	@FindBy(xpath = "//span[contains(text(),'Pandya')]")
-	WebElement text;
+	@FindBy(xpath = "//a[@title='View my customer account']")
+	WebElement userName;
+	
+	public String getUserName()
+	{
+		String text = userName.getText();
+		return text;
+	}
 	
 	
 

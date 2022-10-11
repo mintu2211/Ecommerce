@@ -29,6 +29,19 @@ public class myAccount {
 	WebElement SubmitCreate;
 	
 	
+	public void createemail(String cemail) {
+		
+		CreateEmailId.sendKeys(cemail);
+			
+		}
+
+	public void clicksubmit() {
+		
+		 SubmitCreate.click();
+			
+		}
+	
+	
 
 
 	// create webelements resgitered user
