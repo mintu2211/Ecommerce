@@ -6,7 +6,7 @@ import java.util.Properties;
 public class ReadConfig {
 
 	Properties properties;
-	String path="C:\\Users\\Devendra\\git\\Ecommerce\\MyStoreV1\\Configuration\\config.properties";
+	String path="C:\\Users\\Devendra\\Desktop\\ecomm\\Ecommerce\\MyStoreV1\\Configuration\\config.properties";
 	
 	//create constructor
 	//constructor

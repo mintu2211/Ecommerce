@@ -122,10 +122,10 @@ public class accountCreationdetals {
 		city.sendKeys(city1);
 	}
 
-	public void selectstate(String text1) {
+	public void selectstate(int text1) {
 
 		Select obj= new Select(state);
-		obj.selectByVisibleText(text1);
+		obj.selectByIndex(text1);
 		
 	}
 

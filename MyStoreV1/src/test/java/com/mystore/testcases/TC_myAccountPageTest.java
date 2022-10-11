@@ -7,18 +7,19 @@ import org.testng.annotations.Test;
 
 import com.mystore.pageobject.accountCreationdetals;
 import com.mystore.pageobject.indexpage;
+import com.mystore.pageobject.myAccount;
 import com.mystore.utilities.ReadConfig;
 
 public class TC_myAccountPageTest extends Baseclass {
 
 
-	 ReadConfig readconfig=new ReadConfig();
+	ReadConfig readconfig=new ReadConfig();
 
 	@Test(enabled = true)
-	public void verifyregistrationAndLogin()
+	public void verifyregistrationAndLogin() throws IOException
 	{
-     
-		 ReadConfig readconfig=new ReadConfig();
+
+		ReadConfig readconfig=new ReadConfig();
 		//launch browse
 		//open url
 		driver.get(url);
@@ -51,13 +52,13 @@ public class TC_myAccountPageTest extends Baseclass {
 		logger.info("enter Address");
 		accountcreationPg.entercity("vidisha");
 		logger.info("enter city");
-		accountcreationPg.selectstate("Iowa");
+		accountcreationPg.selectstate(2);
 		accountcreationPg.enterPostcode("0000");
 		accountcreationPg.selectcountry("United States");
 		accountcreationPg.entermoblino("9039140296");
 		accountcreationPg.aliasAdd("200 link road no 1vidisha");
 		accountcreationPg.clickOnRegister();
-
+        capturescreenshot(driver, "verifyregistrationAndLogin");
 
 
 	}
@@ -76,20 +77,20 @@ public class TC_myAccountPageTest extends Baseclass {
 		pg.clickOnSignIn();
 		logger.info("click ion signIn");
 
-		driver.findElement(By.id("email")).sendKeys(readconfig.getEmail());
-		logger.info("enter registered email");
-		
 
-		driver.findElement(By.id("passwd")).sendKeys(readconfig.getpassword());
+
+		myAccount ma=new myAccount(driver);
+		ma.enterEmail("devendra.vds2211@gmail.com");
+		logger.info("enter registered email");
+		ma.enterpassword("devendra11");
 		logger.info("enter registered password");
-		driver.findElement(By.id("SubmitLogin")).click();
+		ma.clickOnSignIn();
 		logger.info("verifyLogin -Passed");
 		capturescreenshot(driver, "verifylogin");
-		
-		
-		
-		driver.quit();
-}
+
+
+
+	}
 
 
 

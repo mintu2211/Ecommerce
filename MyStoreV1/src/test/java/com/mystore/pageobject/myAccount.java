@@ -1,8 +1,11 @@
 package com.mystore.pageobject;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
 
 public class myAccount {
 
@@ -20,25 +23,42 @@ public class myAccount {
 
 	//identify webelements create new user 
 	@FindBy(id = "email_create")
-	WebDriver CreateEmailId;
+	WebElement CreateEmailId;
 
 	@FindBy(name = "SubmitCreate")
-	WebDriver SubmitCreate;
+	WebElement SubmitCreate;
 	
 	
 
 
 	// create webelements resgitered user
 	@FindBy(id = "email")
-	WebDriver registeredUserEmailId;
+	WebElement registeredUserEmailId;
 
 	@FindBy(id  = "passwd")
-	WebDriver resgisteredUserPassword;
+	WebElement resgisteredUserPassword;
 
 	@FindBy(id  = "SubmitLogin")
-	WebDriver signIn;
+	WebElement signIn;
 
+	
+	public void enterEmail(String remail) {
+		
+	  registeredUserEmailId.sendKeys(remail);
+		
+	}
+	
+	public void enterpassword(String rpwd) {
+		
+		  resgisteredUserPassword.sendKeys(rpwd);
+			
+		}
 
+	public void clickOnSignIn() {
+		
+		 signIn.click();;
+			
+		}
   
 
 }

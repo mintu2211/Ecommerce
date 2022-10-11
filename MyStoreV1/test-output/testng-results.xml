@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-08T11:20:41 IST" name="Suite" finished-at="2022-10-08T11:21:13 IST" duration-ms="31597">
+  <suite started-at="2022-10-11T13:46:20 IST" name="Suite" finished-at="2022-10-11T13:46:43 IST" duration-ms="22971">
     <groups>
     </groups>
-    <test started-at="2022-10-08T11:20:41 IST" name="Test" finished-at="2022-10-08T11:21:13 IST" duration-ms="31597">
+    <test started-at="2022-10-11T13:46:20 IST" name="Test" finished-at="2022-10-11T13:46:43 IST" duration-ms="22971">
       <class name="com.mystore.testcases.TC_myAccountPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcases.TC_myAccountPageTest@700fb871]" started-at="2022-10-08T11:20:43 IST" name="setup" finished-at="2022-10-08T11:20:50 IST" duration-ms="7807" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.mystore.testcases.TC_myAccountPageTest@700fb871]" started-at="2022-10-11T13:46:20 IST" name="setup" finished-at="2022-10-11T13:46:24 IST" duration-ms="4334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyregistrationAndLogin()[pri:0, instance:com.mystore.testcases.TC_myAccountPageTest@700fb871]" started-at="2022-10-08T11:20:50 IST" name="verifyregistrationAndLogin" finished-at="2022-10-08T11:21:04 IST" duration-ms="13155" status="FAIL">
+        <test-method signature="verifyregistrationAndLogin()[pri:0, instance:com.mystore.testcases.TC_myAccountPageTest@700fb871]" started-at="2022-10-11T13:46:24 IST" name="verifyregistrationAndLogin" finished-at="2022-10-11T13:46:36 IST" duration-ms="11652" status="FAIL">
           <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
             <message>
               <![CDATA[Element should have been "select" but was "div"
@@ -26,7 +26,7 @@ System info: host: 'DEVENDRA', ip: '192.168.29.223', os.name: 'Windows 8.1', os.
 Driver info: driver.version: unknown
 at org.openqa.selenium.support.ui.Select.<init>(Select.java:49)
 at com.mystore.pageobject.accountCreationdetals.selectstate(accountCreationdetals.java:127)
-at com.mystore.testcases.TC_myAccountPageTest.verifyregistrationAndLogin(TC_myAccountPageTest.java:54)
+at com.mystore.testcases.TC_myAccountPageTest.verifyregistrationAndLogin(TC_myAccountPageTest.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,7 +61,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyregistrationAndLogin -->
-        <test-method signature="verifylogin()[pri:2, instance:com.mystore.testcases.TC_myAccountPageTest@700fb871]" started-at="2022-10-08T11:21:04 IST" name="verifylogin" finished-at="2022-10-08T11:21:13 IST" duration-ms="9376" status="PASS">
+        <test-method signature="verifylogin()[pri:2, instance:com.mystore.testcases.TC_myAccountPageTest@700fb871]" started-at="2022-10-11T13:46:36 IST" name="verifylogin" finished-at="2022-10-11T13:46:43 IST" duration-ms="6423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->

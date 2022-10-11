@@ -3,6 +3,8 @@ package com.mystore.testcases;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -52,8 +54,11 @@ public class TC_myAccountPageTestDataDrivenTesting extends Baseclass {
 		accountcreationPg.enteraddress("205 LBS Nagar");
 		logger.info("enter Address");
 		accountcreationPg.entercity("vidisha");
-		logger.info("enter city");
-		accountcreationPg.selectstate("Iowa");
+	    logger.info("enter city");
+	    WebElement state=driver.findElement(By.id("\"uniform-id_state\""));
+		Select obj=new Select(state);
+		obj.selectByValue("Iowa");
+		//accountcreationPg.selectstate("Iowa");
 		accountcreationPg.enterPostcode("0000");
 		accountcreationPg.selectcountry("United States");
 		accountcreationPg.entermoblino("9039140296");
