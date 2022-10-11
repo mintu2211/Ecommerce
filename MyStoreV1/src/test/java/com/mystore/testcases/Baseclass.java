@@ -66,12 +66,6 @@ public class Baseclass {
 	}
 
 
-	@AfterClass
-	public void tearDown()
-	{
-		driver.close();
-		driver.quit();
-	}
 
 	public void capturescreenshot(WebDriver driver, String testname) throws IOException 
 	{
@@ -86,4 +80,11 @@ public class Baseclass {
 		FileUtils.copyFile(src, dest);
 	}
 
+
+	@AfterClass
+	public void tearDown()
+	{
+		driver.close();
+		driver.quit();
+	}
 }

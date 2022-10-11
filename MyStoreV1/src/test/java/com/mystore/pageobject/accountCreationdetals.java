@@ -50,13 +50,13 @@ public class accountCreationdetals {
 	@FindBy(id="city")
 	WebElement city;
 
-	@FindBy(id="uniform-id_state")
+	@FindBy(xpath = "//select[@id='id_state']")
 	WebElement state;
 
 	@FindBy(id="postcode")
 	WebElement postalcode;
 
-	@FindBy(id="id_country")
+	@FindBy(xpath = "//select[@id='id_country']")
 	WebElement country;
 
 	@FindBy(id="phone_mobile")
@@ -122,10 +122,10 @@ public class accountCreationdetals {
 		city.sendKeys(city1);
 	}
 
-	public void selectstate(int text1) {
+	public void selectstate(String text1) {
 
 		Select obj= new Select(state);
-		obj.selectByIndex(text1);
+		obj.selectByVisibleText(text1);
 		
 	}
 

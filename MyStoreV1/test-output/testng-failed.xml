@@ -6,12 +6,12 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.mystore.testcases.TC_myAccountPageTest">
+      <class name="com.mystore.testcases.TC_myAccountPageTestDataDrivenTesting">
         <methods>
-          <include name="setup"/>
           <include name="verifyregistrationAndLogin"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.mystore.testcases.TC_myAccountPageTest -->
+      </class> <!-- com.mystore.testcases.TC_myAccountPageTestDataDrivenTesting -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

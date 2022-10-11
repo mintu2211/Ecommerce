@@ -53,10 +53,10 @@ public class TC_myAccountPageTest extends Baseclass {
 		accountcreationPg.entercity("vidisha");
 		logger.info("enter city");
 		accountcreationPg.selectstate(2);
-		accountcreationPg.enterPostcode("0000");
+		accountcreationPg.enterPostcode("00000");
 		accountcreationPg.selectcountry("United States");
 		accountcreationPg.entermoblino("9039140296");
-		accountcreationPg.aliasAdd("200 link road no 1vidisha");
+		accountcreationPg.aliasAdd("200 link road no");
 		accountcreationPg.clickOnRegister();
         capturescreenshot(driver, "verifyregistrationAndLogin");
 

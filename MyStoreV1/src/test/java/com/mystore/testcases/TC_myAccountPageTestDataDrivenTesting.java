@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.mystore.pageobject.accountCreationdetals;
 import com.mystore.pageobject.indexpage;
+import com.mystore.pageobject.myAccount;
 import com.mystore.utilities.ReadConfig;
 import com.mystore.utilities.ReadExcelFile;
 
@@ -19,7 +20,7 @@ public class TC_myAccountPageTestDataDrivenTesting extends Baseclass {
 	 ReadConfig readconfig=new ReadConfig();
 
 	@Test(enabled = true)
-	public void verifyregistrationAndLogin()
+	public void verifyregistrationAndLogin() throws IOException
 	{
      
 		 ReadConfig readconfig=new ReadConfig();
@@ -55,22 +56,21 @@ public class TC_myAccountPageTestDataDrivenTesting extends Baseclass {
 		logger.info("enter Address");
 		accountcreationPg.entercity("vidisha");
 	    logger.info("enter city");
-	    WebElement state=driver.findElement(By.id("\"uniform-id_state\""));
-		Select obj=new Select(state);
-		obj.selectByValue("Iowa");
-		//accountcreationPg.selectstate("Iowa");
-		accountcreationPg.enterPostcode("0000");
+	  
+		accountcreationPg.selectstate("Iowa");
+		accountcreationPg.enterPostcode("00000");
 		accountcreationPg.selectcountry("United States");
 		accountcreationPg.entermoblino("9039140296");
-		accountcreationPg.aliasAdd("200 link road no 1vidisha");
+		accountcreationPg.aliasAdd("200 link road no");
 		accountcreationPg.clickOnRegister();
+		capturescreenshot(driver, "newacc");
 
 
 
 	}
 
 
-	@Test(dataProvider = "LoginDataProvider")
+	@Test(dataProvider = "LoginDataProvider", enabled = false)
 	public void verifylogin(String userName, String password, String expecteduserName) throws IOException 
 	{
 		//launch browse
@@ -82,14 +82,19 @@ public class TC_myAccountPageTestDataDrivenTesting extends Baseclass {
 		indexpage pg=new indexpage(driver);
 		pg.clickOnSignIn();
 		logger.info("click ion signIn");
-
-		driver.findElement(By.id("email")).sendKeys(userName);
+       
+		
+		myAccount ma=new myAccount(driver);
+		ma.enterEmail(userName);
+		//driver.findElement(By.id("email")).sendKeys(userName);
 		logger.info("enter registered email");
 		
 
-		driver.findElement(By.id("passwd")).sendKeys(password);
+		//driver.findElement(By.id("passwd")).sendKeys(password);
+		ma.enterpassword(password);
 		logger.info("enter registered password");
-		driver.findElement(By.id("SubmitLogin")).click();
+		//driver.findElement(By.id("SubmitLogin")).click();
+		ma.clickOnSignIn();
 		logger.info("verifyLogin -Passed");
 		capturescreenshot(driver, "verifylogin");
 		

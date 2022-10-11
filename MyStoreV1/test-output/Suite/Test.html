@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 11 13:46:20 IST 2022</td>
+<td>Started on:</td><td>Tue Oct 11 17:08:11 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22971 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21563 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,23 +75,37 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.mystore.testcases.TC_myAccountPageTest.verifyregistrationAndLogin()'><b>verifyregistrationAndLogin</b><br>Test class: com.mystore.testcases.TC_myAccountPageTest</td>
-<td><div><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;div&quot;
+<td title='com.mystore.testcases.TC_myAccountPageTestDataDrivenTesting.verifyregistrationAndLogin()'><b>verifyregistrationAndLogin</b><br>Test class: com.mystore.testcases.TC_myAccountPageTestDataDrivenTesting</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: id_gender2
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;DEVENDRA&apos;, ip: &apos;192.168.29.223&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;17.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:49)
-	at com.mystore.pageobject.accountCreationdetals.selectstate(accountCreationdetals.java:127)
-	at com.mystore.testcases.TC_myAccountPageTest.verifyregistrationAndLogin(TC_myAccountPageTest.java:55)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at com.mystore.pageobject.accountCreationdetals.selecttitleMrs(accountCreationdetals.java:75)
+	at com.mystore.testcases.TC_myAccountPageTestDataDrivenTesting.verifyregistrationAndLogin(TC_myAccountPageTestDataDrivenTesting.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace169251264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace169251264'><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;div&quot;
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1213733435", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1213733435'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: id_gender2
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
 System info: host: &apos;DEVENDRA&apos;, ip: &apos;192.168.29.223&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;17.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:49)
-	at com.mystore.pageobject.accountCreationdetals.selectstate(accountCreationdetals.java:127)
-	at com.mystore.testcases.TC_myAccountPageTest.verifyregistrationAndLogin(TC_myAccountPageTest.java:55)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at com.mystore.pageobject.accountCreationdetals.selecttitleMrs(accountCreationdetals.java:75)
+	at com.mystore.testcases.TC_myAccountPageTestDataDrivenTesting.verifyregistrationAndLogin(TC_myAccountPageTestDataDrivenTesting.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,21 +135,8 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>11</td>
-<td>com.mystore.testcases.TC_myAccountPageTest@700fb871</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.mystore.testcases.TC_myAccountPageTest.verifylogin()'><b>verifylogin</b><br>Test class: com.mystore.testcases.TC_myAccountPageTest</td>
-<td></td>
-<td>6</td>
-<td>com.mystore.testcases.TC_myAccountPageTest@700fb871</td></tr>
+<td>16</td>
+<td>com.mystore.testcases.TC_myAccountPageTestDataDrivenTesting@4470fbd6</td></tr>
 </table><p>
 </body>
 </html>
